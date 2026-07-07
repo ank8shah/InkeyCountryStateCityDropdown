@@ -56,7 +56,7 @@ Configuration:
 | Country | Bind to **Country** column |
 | State | Leave Empty |
  
-![Screenshot](PCF_ScreenShort/7.png)
+![Screenshot](ScreenShots/Image_07.png)
 ---
  
 ### 3. City Field
@@ -72,7 +72,7 @@ Configuration:
 | State | Bind to **State** column |
  
  
-![Screenshot](PCF_ScreenShort/8.png)
+![Screenshot](ScreenShots/Image_08.png)
 ---
  
 ## Usage
