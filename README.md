@@ -41,7 +41,7 @@ Configuration:
 | Country | Leave Empty |
 | State | Leave Empty |
  
-![Screenshot](PCF_ScreenShort/6.png)
+![Screenshot](ScreenShots/Image_06.png)
 ---
  
 ### 2. State Field
