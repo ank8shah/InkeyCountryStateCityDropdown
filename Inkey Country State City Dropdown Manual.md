@@ -1,80 +1,129 @@
-Inkey Country State City Manual
+# Inkey Country State City Manual
+ 
 This guide walks you through the process of downloading, importing, configuring, and validating the InkeyCountryStateCityDropdown PCF control for the Country, State, and City fields in a model-driven app.
+ 
 The InkeyCountryStateCityDropdown PCF control is distributed as a managed solution and is available from the project's GitHub repository.
-
-To download the latest version:
-1.	Open the GitHub repository using the link below. 
-GitHub Repository:
-https://github.com/ank8shah/InkeyCountryStateCityDropdown
  
-
-2.	Navigate to the Releases section. 
+## To download the latest version:
  
-3.	Download the latest managed solution (.zip) file from the Assets section.
+1. Open the GitHub repository using the link below.
  
-4.	Import the downloaded solution into your Power Platform environment.
+   **GitHub Repository:**  
+GitHub - ank8shah/InkeyCountryStateCityDropdown: Developed by Inkey IT Solutions. This reusable PCF…
  
-
-
-Configure the Control for Country, State, and City Fields
-
+   ![Screenshot](ScreenShots/Image_11.png)
+ 
+2. Navigate to the Releases section.
+ 
+   ![Screenshot](ScreenShots/Image_12.png)
+ 
+3. Download the latest managed solution (.zip) file from the Assets section.
+ 
+   ![Screenshot](ScreenShots/Image_13.png)
+ 
+4. Import the downloaded solution into your Power Platform environment.
+ 
+   ![Screenshot](ScreenShots/Image_01.png)
+ 
+---
+ 
+# Configure the Control for Country, State, and City Fields
+ 
 After importing the managed solution, the next step is to configure the InkeyCountryStateCityDropdown PCF control on your Model-driven App form.
+ 
 Before configuring the control, ensure that your Dataverse table contains the following Single Line of Text columns:
-•	Country 
-•	State 
-•	City 
+ 
+- Country
+- State
+- City
+ 
 The same PCF control is used for all three fields. The behaviour of the control is determined by the Mode property.
-Step 1: Configure the Country Field
-1.	Open your table in Power Apps. 
-2.	Edit the required Main Form. 
  
-3.	Select the Country field. 
+## Step 1: Configure the Country Field
  
-4.	Go to the Components tab and add     the InkeyCountryStateCityDropdown control.(+ Component  >  Get More Component)
-
+1. Open your table in Power Apps.
  
+2. Edit the required Main Form.
  
-5.	Configure the properties as shown below:
-
-Property	Value
-Mode	Country
-Country	Leave Empty
-State	Leave Empty
-
-      6.	Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app).
+   ![Screenshot](ScreenShots/Image_00.png)
  
-
-Step 2: Configure the State Field
-1.	Select the State field. 
-2.	Add the same InkeyCountryStateCityDropdown control. 
-3.	Configure the properties as follows: 
-
-Property	Value
-Mode	State
-Country	Bind to the Country column
-State	Leave Empty
-4.	Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app). 
-
+3. Select the Country field.
+ 
+   ![Screenshot](ScreenShots/Image_00.png)
+ 
+4. Go to the Components tab and add the **InkeyCountryStateCityDropdown** control.  
+   (**+ Component > Get More Component**)
+ 
+   ![Screenshot](ScreenShots/Image_02.png)
+ 
+   ![Screenshot](ScreenShots/Image_03.png)
+ 
+5. Configure the properties as shown below.
+ 
+| Property | Value |
+|----------|-------|
+| Mode | Country |
+| Country | Leave Empty |
+| State | Leave Empty |
+ 
+6. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
+ 
+   ![Screenshot](ScreenShots/Image_06.png)
+ 
+---
+ 
+## Step 2: Configure the State Field
+ 
+1. Select the State field.
+ 
+2. Add the same InkeyCountryStateCityDropdown control.
+ 
+3. Configure the properties as follows.
+ 
+| Property | Value |
+|----------|-------|
+| Mode | State |
+| Country | Bind to the Country column |
+| State | Leave Empty |
+ 
+4. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
+ 
 This configuration automatically filters the available States based on the selected Country.
  
-
-Step 3: Configure the City Field
-1.	Select the City field. 
-2.	Add the same InkeyCountryStateCityDropdown control. 
-3.	Configure the properties as follows: 
-Property	Value
-Mode	City
-Country	Bind to the Country column
-State	Bind to the State column
-4.	Under Show component on, select Web, Phone, and Tablet (or the platforms required for your app).
-This configuration automatically filters the available Cities based on the selected State.
-
+![Screenshot](ScreenShots/Image_07.png)
  
-
-Save and Publish
+---
+ 
+## Step 3: Configure the City Field
+ 
+1. Select the City field.
+ 
+2. Add the same InkeyCountryStateCityDropdown control.
+ 
+3. Configure the properties as follows.
+ 
+| Property | Value |
+|----------|-------|
+| Mode | City |
+| Country | Bind to the Country column |
+| State | Bind to the State column |
+ 
+4. Under **Show component on**, select **Web, Phone, and Tablet** (or the platforms required for your app).
+ 
+This configuration automatically filters the available Cities based on the selected State.
+ 
+![Screenshot](ScreenShots/Image_08.png)
+ 
+---
+ 
+# Save and Publish
+ 
 Once all three fields have been configured:
-1.	Save the form. 
-2.	Publish all customizations. 
-3.	Open a record to verify the control. 
+ 
+1. Save the form.
+ 
+2. Publish all customizations.
+ 
+3. Open a record to verify the control.
+ 
 When you select a Country, only the related States are displayed. After selecting a State, only the corresponding Cities are available, providing a clean and intuitive cascading dropdown experience.
-
