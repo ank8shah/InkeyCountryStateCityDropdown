@@ -12,7 +12,7 @@ A Power Apps Component Framework (PCF) control that provides cascading Country, 
 - Supports Model-driven Apps
  
 ---
- 
+
 ## Prerequisites
  
 Before using the control, create the following **Single Line of Text** columns in your Dataverse table:
